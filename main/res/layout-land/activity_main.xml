@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryLight"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="zuykov.pavel.passinv.MainActivity">
+
+
+    <EditText
+        android:id="@+id/inRuText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:singleLine="true"
+        android:layout_marginLeft="10dp"
+        android:hint="введите максимум 20 символов"
+        android:textColorHint="@color/primaryShade" />
+
+    <TextView
+        android:id="@+id/hintTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/inRuText"
+        android:layout_marginLeft="10dp"
+        android:text=" результат: "
+        android:textColor="@color/primaryDark" />
+
+    <TextView
+        android:id="@+id/outEngText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inRuText"
+        android:layout_toRightOf="@id/hintTextView" />
+
+    <ImageButton
+        android:id="@+id/functionButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/outEngText"
+        android:layout_marginLeft="10dp"
+        android:onClick="onClick"
+        android:src="@drawable/fishbutton" />
+
+    <!--<Button-->
+    <!--android:id="@+id/functionButton"-->
+    <!--android:layout_width="250dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:background="@color/accentShade"-->
+    <!--android:onClick="onClick"-->
+    <!--android:text="Выполнить"-->
+    <!--android:textColor="@color/primaryDark" />-->
+
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/functionButton" />
+
+</RelativeLayout>
